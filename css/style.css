@@ -1,0 +1,345 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/*//////////////////////////////////////// header ////////////////////////////////////////*/
+.menu {
+  margin-top: 18px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-logo {
+  display: flex;
+  align-items: center; 
+}
+.avatar {
+  width: 57px;
+  height: 57px;
+  background: url('https://pp.userapi.com/c845124/v845124759/116c81/YNUwY9epXPM.jpg');
+  background-size: 300%;
+  border-radius: 50%;
+  background-position: 80%;
+}
+.description {
+  margin-left: 9px;
+}
+.name {
+  display: block;
+  font-size: 16px;
+  font-weight: 800;
+}
+.menu-list{
+  display: flex;
+  align-items: center;
+  
+}
+.menu-list a {
+  text-decoration: none;
+  color: #2b2a2c;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-right: 34px;
+  position:relative;
+}
+.menu-list a::before {
+  content: '';
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 0%;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transition: 0.5s;
+  transform: scale(0);
+}
+.menu-list a:hover:before {
+  transform: scale(1);
+}
+.menu-button {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 800;
+  background-color: transparent;
+  border-radius: 50px;
+  border: 2px solid #2b2a2c;
+  padding: 13px 22px;
+  cursor: pointer;
+  transition: .7s;
+}
+.menu-button:hover {
+  color: #fff;
+  background: #000;
+}
+ /*//////////////////////////////////////// hero ////////////////////////////////////////*/
+.hero {
+  padding: 112px 0;
+  background: url('https://pp.userapi.com/c849528/v849528382/104225/UMRjygoPHLo.jpg') no-repeat right bottom;
+
+}
+.hero-subtitle {
+  font-size: 32px;
+}
+.hero-title {
+   font-size: 45px;
+  font-weight: 800;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.hero-description {
+  font-size: 18px;
+  color: #6a696b;
+}
+.hero-social {
+  margin-top: 30px; 
+}
+.social {
+  display: inline-block;
+  width: 41px;
+  height: 41px;
+  margin-right: 10px;
+  color: #fff;
+  text-align: center;
+  line-height: 41px;
+}
+.behance-bg {
+  background-color: #1869ff;
+}
+.facebook-bg {
+  background-color: #3a5898;
+}
+.instagram-bg {
+  background-color: #13578a;
+}
+.vk-bg {
+background-color: #56acef;
+}
+.hero-buttons {
+  margin-top: 40px;
+}
+.button {
+  font-size: 16px;
+  font-weight: 800;
+  text-decoration: none;
+  background-color: #2b2a2c;
+  border-radius: 50px;
+  padding: 20px 34px;
+  display: inline-block;
+}
+.button-primary {
+  color: #fff;
+  box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.25);
+  margin-right: 17px;
+  margin-bottom: 10px;
+}
+.button-0 {
+  background-color: transparent;
+  color: #6a696b;
+  border: 1px solid #6a696b;
+}
+/*//////////////////////////////////////// projects ////////////////////////////////////////*/
+.projects {
+  padding: 97px 0;
+}
+.project-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+.project-card {
+  min-height: 370px;
+  width: 370px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);  
+  margin-bottom: 50px;
+  transition: transform 0.5s
+}
+.project-card:hover {
+   transform: scale(1.1);
+   cursor: pointer;
+}
+.project-card_image {
+  height: 300px;
+}
+.card_1 {
+  background: url('https://www.oranj.by/upload/iblock/442/442825d0f3294cddbb9a4f4b29f94565.jpg') center;
+  background-size: cover;
+}
+.card_2 {
+  background: url('https://art-lemon.com/data/portfolio/steak-shop/thumb.png') center;
+  background-size: cover;
+}
+.card_3 {
+  background: url('http://seo-design.net/wp-content/uploads/2015/12/original-site__unusual-css3-circular-navigation-menu.jpg') center;
+  background-size: cover;
+}
+.card_4 {
+  background: url('http://feej.ru/files/sites/preview/budoucnost_1.png') center;
+  background-size: cover;
+}
+.card_5 {
+  background: url('http://diesel.elcat.kg/uploads/monthly_09_2018/post-290001-0-55614700-1537877689.jpg') center;
+  background-size: cover;
+}
+.card_6 {
+  background: url('https://webrand.kg/admin/image/webimg/multi.png') center;
+  background-size: cover;
+}
+.card_7 {
+  background: url('https://blog.pioneers.com.ua/wp-content/uploads/2016/02/08_PNR.jpg') center;
+  background-size: cover;
+}
+.card_8 {
+  background: url('https://1ps.ru/files/blog/2016/Kraud_1.jpg') center;
+  background-size: cover;
+}
+.card_9 {
+  background: url('https://kolyan.net/uploads/posts/2012-12/1355986683_2.jpg') center;
+  background-size: cover;
+}
+.project-card_info {
+  padding: 19px 13px;
+  
+}
+.project-category {
+  display: block;
+  font-size: 12px;
+  color: #2b2a2c;
+}
+.project-title {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 10px;
+}
+/*//////////////////////////////////////// about me ////////////////////////////////////////*/
+.about-me{
+  padding-top: 175px;
+  padding-bottom: 105px;
+}
+.about-me_info {
+  display: flex;
+  justify-content: space-between;
+}
+.about-me_photo {
+  width: 542px;
+  height: 606px;
+  background: url('https://i.ibb.co/8DFWq2b/alex.jpg');
+  background-size: cover;
+  border-radius: 10px;
+}
+.about-me_text {
+  padding-top: 132px;
+}
+.about-me_title {
+  color: #2b2a2c;
+  font-size: 45px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.about-me_description {
+  width: 471px;
+  height: 252px;
+  color: #717072;
+  font-size: 12px;
+  line-height: 24px;
+  margin: 0;
+  padding-top: 42px;
+}
+.about-me_buttons {
+  margin-top: 53px;
+}
+/*//////////////////////////////////////// footer ////////////////////////////////////////*/
+.footer { 
+background-color: #2b2a2c; 
+padding: 20px 0; 
+color: #8d8d8e;
+} 
+.footer a { 
+text-decoration: none;  
+color: #8d8d8e;  
+} 
+.footer-info { 
+display: flex; 
+justify-content: space-between; 
+} 
+.footer-text { 
+display: flex; 
+align-items: center; 
+} 
+.copyright { 
+padding-right: 16px; 
+margin-right: 16px; 
+border-right: 1px solid #413f41; 
+font-size: 14px; 
+} 
+.footer-social__link { 
+font-size: 20px; 
+margin-right: 13px; 
+} 
+
+.footer-menu { 
+display: flex; 
+align-items: center; 
+} 
+.footer-menu a { 
+font-size: 14px; 
+display:inline-block; 
+margin-right: 30px; 
+} 
+.footer-button { 
+font-size: 14px; 
+background-color: transparent; 
+border-radius: 50px; 
+border: 1px solid #8d8d8e; 
+padding: 8px 22px; 
+}
+/*//////////////////////////////////////// adaptive ////////////////////////////////////////*/
+@media (max-width: 1200px) {
+  .container {
+    width: 965px;
+  }
+  .project-card {
+    width: 48%;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    width: 760px;
+  }
+  .project-card {
+    width: 48%;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+  .description_small {
+    font-size: 10px;
+  }
+  .menu-list {
+    display: none;
+  }
+  .hero {
+    padding-bottom: 550px;
+    padding-top: 30px;
+  }
+  .project-card {
+    width: 95%;
+    margin: 30px auto;
+  }
+}
